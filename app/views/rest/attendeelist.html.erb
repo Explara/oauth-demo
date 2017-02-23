@@ -1,0 +1,23 @@
+<div class="title">
+  <h2>Sample Event App</h2>
+</div>
+
+<% if @attendee.any? %>
+    <table class="table-striped box">
+      <tr>
+        <th>Name</th>
+        <th>Email Id</th>
+        <th>Mobile No</th>
+      </tr>
+      <% @attendee.each do |attende| %>
+          <tr>
+            <td><%= attende["name"] %></td>
+            <td><%= attende["email"] %></td>
+            <td><%= attende["phoneNo"] %></td>
+          </tr>
+      <% end %>
+    </table>
+
+<% else %>
+    <p>No Attendees found</p>
+<% end %>

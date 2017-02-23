@@ -1,0 +1,28 @@
+<div class="title">
+  <h2>Sample Event App</h2>
+</div>
+
+<% if @events.any? %>
+      <table class="table-striped box">
+        <tr>
+          <th>Event Id</th>
+          <th>Event Name</th>
+          <th>Attendees</th>
+        </tr>
+        <% @events.each do |event| %>
+
+            <tr>
+              <td><%= event["eventId"]  %></td>
+              <td><%= event["eventTitle"] %></td>
+              <td><%= link_to 'Attendee List', {:controller => "rest" , :action=> "attendeelist", :eventId => event["eventId"] , :accessToken => @accesstoken } %></td>
+            </tr>
+
+        <% end %>
+      </table>
+
+
+
+
+<% else %>
+    <p>No Events are created</p>
+<% end %>

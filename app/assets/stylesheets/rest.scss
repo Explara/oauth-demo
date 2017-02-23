@@ -1,0 +1,38 @@
+// Place all the styles related to the Rest controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.box{
+  width: 100%;
+}
+.box th  {
+  padding: 10px;
+  text-align: center;
+}
+
+.box td  {
+  padding: 10px;
+
+}
+.title{
+  padding: 10px;
+
+}
+.content{
+  text-align: center;
+  background-color: #f2f2f1;
+  height: 750px;
+}
+.login-modal{
+  margin-top: 25%;
+  background-color: #ffffff;
+}
+.loginbtn{
+  font-family: "Open Sans", sans-serif;
+  padding: 6px 20px;
+  font-size: 16px;
+  border: 2px solid #db4344;
+  border-radius: 100px;
+  color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(219, 67, 68, 0.6);
+}

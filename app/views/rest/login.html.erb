@@ -1,0 +1,17 @@
+<div >
+  <div class="login-modal col-xs-12 col-sm-12 col-md-4 col-md-offset-4 " id="login-modal" style="display:block;">
+
+    <h3 style="margin: 20px 0;">Explara Demo App</h3>
+    <h4>Note: This application is for demo purposes only.</h4>
+    <button type="button" class="btn loginbtn" style="background-color: #db4344; margin: 0 0 20px 0" onclick="oauthLoginPopUp()">Login</button>
+
+  </div>
+</div>
+
+
+
+<script>
+function oauthLoginPopUp() {
+    location.href = 'https://www.explara.com/a/account/oauth/authorize?response_type=code&client_id=<YOUR_CLIENT_ID>&state=event',"Ratting","width=640,height=400,0,status=0,scrollbars=1";
+}
+</script>
